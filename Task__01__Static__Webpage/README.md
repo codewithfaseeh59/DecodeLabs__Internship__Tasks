@@ -1,8 +1,6 @@
 # Brewed Awakenings ☕
 A static coffee shop website built with pure HTML, CSS, and vanilla JavaScript.
 
-🔗 **[Live Preview](https://codewithfaseeh59.github.io/DecodeLabs__Internship__Tasks/Task-01_Static-Webpage/)** &nbsp;|&nbsp; 📁 **[GitHub Repo](https://github.com/codewithfaseeh59/DecodeLabs__Internship__Tasks)**
-
 ---
 
 ## 📁 Project Structure
