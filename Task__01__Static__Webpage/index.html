@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewed Awakenings — Coffee Shop</title>
+  <meta name="description"
+    content="Brewed Awakenings is a cozy coffee shop in New York serving hand-crafted espresso, cold brew, cappuccinos, and fresh pastries." />
+  <meta name="theme-color" content="#1a110a" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <a href="#" class="logo">Brewed Awakenings</a>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Main Content of Website -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Est. 2018 · Peshawar</p>
+        <h1>Where Every <em>Sip</em> Tells a Story</h1>
+        <p>Hand-crafted coffee, warm ambiance, and a space that feels like home. Come as you are.</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&auto=format&fit=crop"
+          alt="A warm cup of coffee on a wooden table" width="900" height="600" loading="eager" />
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop"
+          alt="Interior of Brewed Awakenings cafe" width="800" height="480" loading="lazy" />
+      </div>
+      <div class="about-content">
+        <p class="section-label">Our Story</p>
+        <h2 id="about-heading">Crafted with Passion, Served with Soul</h2>
+        <p>We started Brewed Awakenings with one simple belief — great coffee should never be rushed. Every bean we
+          source is ethically grown, every cup is made with intention.</p>
+        <p>Our cozy space is designed for makers, dreamers, and anyone who needs a quiet corner to think. Pull up a
+          chair. Stay a while.</p>
+        <div class="stat-row">
+          <div class="stat">
+            <h3>12+</h3>
+            <p>Blends</p>
+          </div>
+          <div class="stat">
+            <h3>6K+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat">
+            <h3>7 yrs</h3>
+            <p>Of Brewing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu" id="menu" aria-labelledby="menu-heading">
+      <div class="menu-header">
+        <p class="section-label">What We Serve</p>
+        <h2 id="menu-heading">Our Signature Menu</h2>
+        <p>Freshly brewed, always made to order.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop"
+            alt="Espresso shot" width="600" height="400" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Classic Espresso</h3>
+            <p>Bold, intense, and perfectly balanced. The purist's choice.</p>
+            <span class="price">Rs. 280</span>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9?w=600&auto=format&fit=crop"
+            alt="Cappuccino with latte art" width="600" height="400" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Velvet Cappuccino</h3>
+            <p>Silky microfoam, rich espresso, and a hint of cinnamon on top.</p>
+            <span class="price">Rs. 350</span>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&auto=format&fit=crop"
+            alt="Cold brew coffee" width="600" height="400" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Cold Brew Noir</h3>
+            <p>Steeped for 18 hours. Smooth, dark, and dangerously good.</p>
+            <span class="price">Rs. 420</span>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWF0Y2hhJTIwbGF0dGV8ZW58MHx8MHx8fDA%3D"
+            alt="Matcha latte" width="600" height="400" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Matcha Mist</h3>
+            <p>Ceremonial grade matcha with oat milk. Earthy and calming.</p>
+            <span class="price">Rs. 390</span>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&auto=format&fit=crop"
+            alt="Freshly baked croissant" width="600" height="400" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Butter Croissant</h3>
+            <p>Flaky, golden, baked fresh every morning. Pairs with anything.</p>
+            <span class="price">Rs. 180</span>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1478144592103-25e218a04891?w=600&auto=format&fit=crop"
+            alt="Iced caramel latte" width="600" height="400" loading="lazy" />
+          <div class="menu-card-body">
+            <h3>Caramel Cloud</h3>
+            <p>Iced espresso, salted caramel, and whipped cream. Summer in a glass.</p>
+            <span class="price">Rs. 450</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+      <div class="gallery-header">
+        <p class="section-label">Moments &amp; Vibes</p>
+        <h2 id="gallery-heading">Inside Brewed Awakenings</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&auto=format&fit=crop"
+          alt="Barista pouring coffee" width="600" height="400" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&auto=format&fit=crop"
+          alt="Cozy cafe corner" width="600" height="400" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&auto=format&fit=crop"
+          alt="Coffee beans" width="600" height="400" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600&auto=format&fit=crop"
+          alt="Latte art closeup" width="600" height="400" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&auto=format&fit=crop"
+          alt="Cafe bookshelves" width="600" height="400" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=600&auto=format&fit=crop"
+          alt="Person reading with coffee" width="600" height="400" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?w=600&auto=format&fit=crop"
+          alt="Coffee with pastry" width="600" height="400" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- VISIT SECTION -->
+    <section class="visit" id="visit" aria-labelledby="visit-heading">
+      <div>
+        <p class="section-label">Find Us</p>
+        <h2 id="visit-heading">Come Visit Us</h2>
+        <div class="info-block">
+          <h4>Address</h4>
+          <p>12-B University Road, Peshawar, KPK</p>
+        </div>
+        <div class="info-block">
+          <h4>Hours</h4>
+          <p>Monday – Friday: 8:00 AM – 10:00 PM</p>
+          <p>Saturday – Sunday: 9:00 AM – 11:00 PM</p>
+        </div>
+        <div class="info-block">
+          <h4>Contact</h4>
+          <p>+92 300 1234567</p>
+          <p>hello@brewedawakenings.pk</p>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <span>📍</span>
+        <p>Map Goes Here</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="logo">Brewed Awakenings</a>
+    <p>© 2025 Brewed Awakenings. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>
