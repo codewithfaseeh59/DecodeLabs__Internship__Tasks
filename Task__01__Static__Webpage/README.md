@@ -3,6 +3,12 @@ A static coffee shop website built with pure HTML, CSS, and vanilla JavaScript.
 
 ---
 
+🔗 **Live Preview:** [Brewed Awakenings](https://decode-labs-internship-tasks.vercel.app/)
+
+🐙 **GitHub Repo:** [Repoistory](https://github.com/codewithfaseeh59/DecodeLabs__Internship__Tasks.git)
+
+---
+
 ## 📁 Project Structure
 
 ```
