@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JELLY — Design Lab</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="loader-blob-wrap">
+                <svg class="loader-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path class="blob-path"
+                        d="M 100 50 C 140 50 160 80 160 100 C 160 130 140 160 100 160 C 60 160 40 130 40 100 C 40 70 60 50 100 50 Z" />
+                </svg>
+            </div>
+            <div class="loader-word">JELLY</div>
+            <div class="loader-bar-wrap">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <div class="loader-count"><span id="loaderCount">0</span>%</div>
+        </div>
+    </div>
+
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <div id="wrapper" data-scroll-container>
+
+        <header id="navbar">
+            <nav>
+                <a href="#" class="nav-logo">Jel<em>ly</em></a>
+
+                <ul class="nav-links">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <a href="#contact" class="btn-primary">Let's Talk →</a>
+                    <button class="hamburger" id="hamburger">
+                        <span class="ham-line line-1"></span>
+                        <span class="ham-line line-2"></span>
+                        <span class="ham-line line-3"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <div class="nav-overlay" id="navOverlay">
+            <div class="overlay-inner">
+                <ul class="overlay-links">
+                    <li><a href="#work" class="overlay-link"><span class="link-num">01</span><em>Work</em></a></li>
+                    <li><a href="#services" class="overlay-link"><span class="link-num">02</span><em>Services</em></a>
+                    </li>
+                    <li><a href="#about" class="overlay-link"><span class="link-num">03</span><em>About</em></a></li>
+                    <li><a href="#contact" class="overlay-link"><span class="link-num">04</span><em>Contact</em></a>
+                    </li>
+                </ul>
+                <div class="overlay-footer">
+                    <a href="#contact" class="btn-primary">Let's Talk →</a>
+                    <p>Got a project? <em><a href="#">Say hello!</a></em></p>
+                </div>
+            </div>
+            <svg class="overlay-blob ob1" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M 200 80 C 280 80 330 140 330 200 C 330 270 270 330 200 330 C 130 330 70 270 70 200 C 70 130 120 80 200 80 Z" />
+            </svg>
+            <svg class="overlay-blob ob2" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M 150 50 C 210 50 260 100 260 150 C 260 210 210 260 150 260 C 90 260 40 210 40 150 C 40 90 90 50 150 50 Z" />
+            </svg>
+        </div>
+
+        <main>
+
+            <section id="hero" data-scroll-section>
+
+                <div class="hero-blobs">
+                    <svg class="hblob hb1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <path class="morph-blob"
+                            d="M 250 80 C 360 80 420 160 420 250 C 420 350 350 430 250 430 C 150 430 80 350 80 250 C 80 150 140 80 250 80 Z" />
+                    </svg>
+                    <svg class="hblob hb2" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <path class="morph-blob-2"
+                            d="M 200 60 C 300 60 350 130 350 200 C 350 280 290 350 200 350 C 110 350 50 280 50 200 C 50 120 100 60 200 60 Z" />
+                    </svg>
+                    <svg class="hblob hb3" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+                        <path class="morph-blob-3"
+                            d="M 175 50 C 260 50 310 110 310 175 C 310 250 255 310 175 310 C 95 310 40 250 40 175 C 40 100 90 50 175 50 Z" />
+                    </svg>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-badge">🪼 We make <em>things wiggle</em></div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Design that</span>
+                        <span class="title-line title-em"><em>feels alive.</em></span>
+                    </h1>
+                    <p class="hero-sub">
+                        JELLY is a creative design lab obsessed with<br>
+                        motion, <em>personality</em>, and making brands
+                        <em>impossible to ignore.</em>
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#work" class="btn-primary btn-lg btn-elastic">See Our Work →</a>
+                        <a href="#contact" class="btn-outline btn-lg btn-elastic">Start a Project</a>
+                    </div>
+                </div>
+
+                <div class="hero-floaties">
+                    <div class="floaty f1">
+                        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="60" cy="60" r="50" class="floaty-shape" />
+                        </svg>
+                    </div>
+                    <div class="floaty f2">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="15" width="70" height="70" rx="30" class="floaty-shape" />
+                        </svg>
+                    </div>
+                    <div class="floaty f3">
+                        <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="70,10 130,120 10,120" class="floaty-shape" />
+                        </svg>
+                    </div>
+                    <div class="floaty f4">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="40" class="floaty-shape" />
+                        </svg>
+                    </div>
+                    <div class="floaty f5">
+                        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="10" width="100" height="100" rx="40" class="floaty-shape" />
+                        </svg>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="marquee-wrap" data-scroll-section>
+                <div class="marquee-track">
+                    <span>Branding</span><span class="dot">✦</span>
+                    <span>Motion Design</span><span class="dot">✦</span>
+                    <span>Web Development</span><span class="dot">✦</span>
+                    <span>UI/UX</span><span class="dot">✦</span>
+                    <span>Illustration</span><span class="dot">✦</span>
+                    <span>Creative Direction</span><span class="dot">✦</span>
+                    <span>Branding</span><span class="dot">✦</span>
+                    <span>Motion Design</span><span class="dot">✦</span>
+                    <span>Web Development</span><span class="dot">✦</span>
+                    <span>UI/UX</span><span class="dot">✦</span>
+                    <span>Illustration</span><span class="dot">✦</span>
+                    <span>Creative Direction</span><span class="dot">✦</span>
+
+                    <span>Branding</span><span class="dot">✦</span>
+                    <span>Motion Design</span><span class="dot">✦</span>
+                    <span>Web Development</span><span class="dot">✦</span>
+                    <span>UI/UX</span><span class="dot">✦</span>
+                    <span>Illustration</span><span class="dot">✦</span>
+                    <span>Creative Direction</span><span class="dot">✦</span>
+                    <span>Branding</span><span class="dot">✦</span>
+                    <span>Motion Design</span><span class="dot">✦</span>
+                    <span>Web Development</span><span class="dot">✦</span>
+                    <span>UI/UX</span><span class="dot">✦</span>
+                    <span>Illustration</span><span class="dot">✦</span>
+                    <span>Creative Direction</span><span class="dot">✦</span>
+                </div>
+
+            </div>
+
+            <section id="work" data-scroll-section>
+                <div class="section-header">
+                    <span class="section-tag">✦ Our Work</span>
+                    <h2>Projects that<br><em>made us proud</em></h2>
+                </div>
+
+                <div class="work-grid">
+
+                    <div class="work-card wc-big" data-scroll data-scroll-speed="0.3">
+                        <div class="work-art">
+                            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="600" height="420" fill="#ffeaa7" />
+                                <circle cx="300" cy="210" r="140" fill="#ffb3c6" opacity="0.7" />
+                                <circle cx="200" cy="150" r="80" fill="#b5ead7" opacity="0.6" />
+                                <circle cx="420" cy="280" r="100" fill="#c7b8ea" opacity="0.5" />
+                                <rect x="220" y="140" width="160" height="140" rx="40" fill="white" opacity="0.4" />
+                            </svg>
+                        </div>
+                        <div class="work-info">
+                            <span class="work-tag">Branding</span>
+                            <h3><em>Bloom</em> Identity</h3>
+                            <p>Full brand system for a wellness startup.</p>
+                        </div>
+                        <div class="work-hover-btn">View →</div>
+                    </div>
+
+                    <div class="work-card" data-scroll data-scroll-speed="0.5">
+                        <div class="work-art">
+                            <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="320" fill="#b5ead7" />
+                                <circle cx="200" cy="160" r="100" fill="#ffb3c6" opacity="0.6" />
+                                <rect x="130" y="100" width="140" height="120" rx="30" fill="white" opacity="0.5" />
+                                <circle cx="200" cy="160" r="40" fill="#c7b8ea" opacity="0.8" />
+                            </svg>
+                        </div>
+                        <div class="work-info">
+                            <span class="work-tag">Motion</span>
+                            <h3><em>Petal</em> App</h3>
+                            <p>Micro-interactions for a fintech app.</p>
+                        </div>
+                        <div class="work-hover-btn">View →</div>
+                    </div>
+
+                    <div class="work-card" data-scroll data-scroll-speed="0.7">
+                        <div class="work-art">
+                            <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="320" fill="#c7b8ea" />
+                                <polygon points="200,40 360,280 40,280" fill="#ffeaa7" opacity="0.7" />
+                                <circle cx="200" cy="200" r="80" fill="#ffb3c6" opacity="0.5" />
+                                <circle cx="200" cy="190" r="40" fill="white" opacity="0.6" />
+                            </svg>
+                        </div>
+                        <div class="work-info">
+                            <span class="work-tag">Web</span>
+                            <h3><em>Prism</em> Studio</h3>
+                            <p>Award-winning portfolio website.</p>
+                        </div>
+                        <div class="work-hover-btn">View →</div>
+                    </div>
+
+                    <div class="work-card" data-scroll data-scroll-speed="0.4">
+                        <div class="work-art">
+                            <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="320" fill="#ffb3c6" />
+                                <rect x="80" y="80" width="240" height="160" rx="40" fill="#ffeaa7" opacity="0.8" />
+                                <rect x="120" y="120" width="160" height="80" rx="20" fill="white" opacity="0.6" />
+                                <circle cx="200" cy="160" r="25" fill="#b5ead7" opacity="0.9" />
+                            </svg>
+                        </div>
+                        <div class="work-info">
+                            <span class="work-tag">UI/UX</span>
+                            <h3><em>Soft</em> Dashboard</h3>
+                            <p>Minimal SaaS dashboard redesign.</p>
+                        </div>
+                        <div class="work-hover-btn">View →</div>
+                    </div>
+
+                    <div class="work-card wc-big" data-scroll data-scroll-speed="0.2">
+                        <div class="work-art">
+                            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="600" height="420" fill="#ffeaa7" />
+                                <circle cx="150" cy="210" r="120" fill="#b5ead7" opacity="0.6" />
+                                <circle cx="450" cy="210" r="120" fill="#c7b8ea" opacity="0.6" />
+                                <circle cx="300" cy="210" r="100" fill="#ffb3c6" opacity="0.7" />
+                                <circle cx="300" cy="210" r="50" fill="white" opacity="0.5" />
+                            </svg>
+                        </div>
+                        <div class="work-info">
+                            <span class="work-tag">Illustration</span>
+                            <h3><em>Aura</em> Campaign</h3>
+                            <p>Custom illustration series for a lifestyle brand.</p>
+                        </div>
+                        <div class="work-hover-btn">View →</div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="services" data-scroll-section>
+                <div class="section-header">
+                    <span class="section-tag">✦ Services</span>
+                    <h2>What we <em>do best</em></h2>
+                </div>
+
+                <div class="services-list">
+
+                    <div class="service-item" data-scroll data-scroll-speed="0.2">
+                        <div class="service-num"><em>01</em></div>
+                        <div class="service-content">
+                            <h3>Brand <em>Identity</em></h3>
+                            <p>Logos, colors, typography, tone of voice — we build brands that <em>stick.</em></p>
+                        </div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="32" class="si-bg" />
+                                <circle cx="40" cy="40" r="16" class="si-accent" />
+                            </svg>
+                        </div>
+                        <div class="service-arrow">→</div>
+                    </div>
+
+                    <div class="service-item" data-scroll data-scroll-speed="0.3">
+                        <div class="service-num"><em>02</em></div>
+                        <div class="service-content">
+                            <h3>Motion <em>Design</em></h3>
+                            <p>Animations that make people stop scrolling and <em>actually watch.</em></p>
+                        </div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="12" width="56" height="56" rx="20" class="si-bg" />
+                                <rect x="28" y="28" width="24" height="24" rx="8" class="si-accent" />
+                            </svg>
+                        </div>
+                        <div class="service-arrow">→</div>
+                    </div>
+
+                    <div class="service-item" data-scroll data-scroll-speed="0.4">
+                        <div class="service-num"><em>03</em></div>
+                        <div class="service-content">
+                            <h3>Web <em>Development</em></h3>
+                            <p>Fast, animated, pixel-perfect websites that <em>convert.</em></p>
+                        </div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="40,8 72,68 8,68" class="si-bg" />
+                                <polygon points="40,28 58,60 22,60" class="si-accent" />
+                            </svg>
+                        </div>
+                        <div class="service-arrow">→</div>
+                    </div>
+
+                    <div class="service-item" data-scroll data-scroll-speed="0.5">
+                        <div class="service-num"><em>04</em></div>
+                        <div class="service-content">
+                            <h3>UI/UX <em>Design</em></h3>
+                            <p>Interfaces so intuitive, users don't even <em>think — they just feel.</em></p>
+                        </div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="40" r="16" class="si-bg" />
+                                <circle cx="55" cy="40" r="16" class="si-accent" />
+                            </svg>
+                        </div>
+                        <div class="service-arrow">→</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="about" data-scroll-section>
+                <div class="about-inner">
+                    <div class="about-text" data-scroll data-scroll-speed="0.4">
+                        <span class="section-tag">✦ About</span>
+                        <h2>We're JELLY.<br><em>Weird. Proud of it.</em></h2>
+                        <p>We're a small team of designers, animators, and developers who believe <em>boring design is a
+                                crime.</em></p>
+                        <p>Every pixel we push has personality. Every animation has a <em>soul.</em> We don't do generic
+                            — ever.</p>
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <strong><em>6+</em></strong>
+                                <span>Years of jiggling</span>
+                            </div>
+                            <div class="about-stat">
+                                <strong><em>120+</em></strong>
+                                <span>Happy clients</span>
+                            </div>
+                            <div class="about-stat">
+                                <strong><em>∞</em></strong>
+                                <span>Cups of coffee</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual" data-scroll data-scroll-speed="0.6">
+                        <div class="about-blob-wrap">
+                            <svg class="about-blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#ffb3c6" />
+                                        <stop offset="50%" stop-color="#c7b8ea" />
+                                        <stop offset="100%" stop-color="#b5ead7" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="about-morph"
+                                    d="M 250 80 C 360 80 430 160 430 250 C 430 350 355 430 250 430 C 145 430 70 350 70 250 C 70 150 140 80 250 80 Z"
+                                    fill="url(#aboutGrad)" opacity="0.5" />
+                            </svg>
+                            <div class="about-icon ai1">🎨</div>
+                            <div class="about-icon ai2">✨</div>
+                            <div class="about-icon ai3">🪼</div>
+                            <div class="about-icon ai4">💫</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" data-scroll-section>
+                <div class="section-header">
+                    <span class="section-tag">✦ Kind Words</span>
+                    <h2>Clients who <em>love us</em></h2>
+                </div>
+                <div class="testi-grid">
+
+                    <div class="testi-card" data-scroll data-scroll-speed="0.2">
+                        <div class="testi-blob">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M 100 30 C 150 30 175 70 175 100 C 175 140 148 175 100 175 C 52 175 25 140 25 100 C 25 60 50 30 100 30 Z"
+                                    class="tb-path" />
+                            </svg>
+                        </div>
+                        <p>"JELLY completely transformed our brand. It's <em>alive, bouncy, and unforgettable.</em>"</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">SR</div>
+                            <div>
+                                <strong>Sara Raza</strong>
+                                <em>Founder, Bloom Co.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card tc-featured" data-scroll data-scroll-speed="0.4">
+                        <div class="testi-blob">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M 100 25 C 155 25 180 65 180 100 C 180 145 150 180 100 180 C 50 180 20 145 20 100 C 20 55 45 25 100 25 Z"
+                                    class="tb-path tb-featured" />
+                            </svg>
+                        </div>
+                        <p>"Every animation they built made our users <em>gasp out loud.</em> Genuinely magical work."
+                        </p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">AK</div>
+                            <div>
+                                <strong>Ali Khan</strong>
+                                <em>CPO, Petal Finance</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card" data-scroll data-scroll-speed="0.6">
+                        <div class="testi-blob">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M 100 35 C 148 35 170 72 170 100 C 170 138 145 170 100 170 C 55 170 30 138 30 100 C 30 62 52 35 100 35 Z"
+                                    class="tb-path" />
+                            </svg>
+                        </div>
+                        <p>"Worked with 10+ agencies. JELLY is the only one that <em>actually gets vibes.</em>"</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">MJ</div>
+                            <div>
+                                <strong>Maya Jones</strong>
+                                <em>Creative Dir., Aura</em>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="contact" data-scroll-section>
+                <div class="contact-inner" data-scroll data-scroll-speed="0.3">
+                    <div class="contact-bg">
+                        <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+                            <path class="contact-morph"
+                                d="M 500 80 C 700 80 850 200 850 300 C 850 430 700 530 500 530 C 300 530 150 430 150 300 C 150 170 300 80 500 80 Z" />
+                        </svg>
+                    </div>
+                    <span class="section-tag">✦ Contact</span>
+                    <h2>Got a project?<br><em>Let's make it jiggle.</em></h2>
+                    <p>We take on <em>3 new projects</em> per month. Spots go fast.</p>
+                    <div class="contact-form">
+                        <input type="text" placeholder="Your name" class="contact-input" />
+                        <input type="email" placeholder="Your email" class="contact-input" />
+                        <textarea placeholder="Tell us about your project..."
+                            class="contact-input contact-textarea"></textarea>
+                        <button class="btn-primary btn-lg btn-elastic" id="submitBtn">Send it → 🪼</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer data-scroll-section>
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="#" class="nav-logo">Jel<em>ly</em></a>
+                        <p>Design that <em>feels alive.</em><br>Made with 🪼 and caffeine.</p>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>Studio</h4>
+                        <ul>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                            <li><a href="#">Behance</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 <em>JELLY Design Lab.</em> All rights reserved.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
