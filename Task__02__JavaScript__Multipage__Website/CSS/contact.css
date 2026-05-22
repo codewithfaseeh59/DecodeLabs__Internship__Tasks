@@ -1,0 +1,234 @@
+
+.contact-section {
+    padding: 100px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+
+.contact-form-wrap .section-title {
+    margin: 12px 0 40px;
+}
+
+.contact-form-wrap .section-title em {
+    font-style: italic;
+    color: #d4af5a;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: #b8972a;
+}
+
+.form-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(184, 151, 42, 0.3);
+    color: #fff;
+    padding: 12px 0;
+    font-size: 0.85rem;
+    font-family: "montserrat";
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.form-input:focus {
+    border-bottom-color: #b8972a;
+}
+
+.form-input::placeholder {
+    color: rgba(200, 192, 176, 0.3);
+}
+
+.form-select {
+    cursor: none;
+    appearance: none;
+}
+
+.form-select option {
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.form-textarea {
+    resize: none;
+    height: 120px;
+}
+
+.btn-submit {
+    display: inline-block;
+    border: 1px solid #b8972a;
+    background: transparent;
+    color: #b8972a;
+    padding: 16px 48px;
+    font-size: 0.68rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    cursor: none;
+    transition: background 0.3s, color 0.3s;
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.btn-submit:hover {
+    background: #b8972a;
+    color: #0a0a0a;
+}
+
+.contact-info-wrap .section-title {
+    margin: 12px 0 40px;
+}
+
+.contact-info-wrap .section-title em {
+    font-style: italic;
+    color: #d4af5a;
+}
+
+.contact-info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.contact-info-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-info-icon {
+    color: #b8972a;
+    font-size: 1rem;
+    min-width: 20px;
+    margin-top: 4px;
+}
+
+.contact-info-title {
+    font-family: "cormorant";
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
+.contact-info-text {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: #c8c0b0;
+}
+
+.contact-socials {
+    border-top: 1px solid rgba(184, 151, 42, 0.15);
+    padding-top: 36px;
+}
+
+.contact-socials .section-label {
+    margin-bottom: 20px;
+}
+
+.contact-social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-social-icons a {
+    color: rgba(200, 192, 176, 0.4);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.contact-social-icons a:hover {
+    color: #b8972a;
+}
+
+.retailers-section {
+    padding: 100px 60px;
+    background: #111;
+    border-top: 1px solid rgba(184, 151, 42, 0.15);
+}
+
+.retailers-header {
+    max-width: 1280px;
+    margin: 0 auto 60px;
+}
+
+.retailers-header .section-title em {
+    font-style: italic;
+    color: #d4af5a;
+}
+
+.retailers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.retailer-card {
+    padding: 36px 30px;
+    border: 1px solid rgba(184, 151, 42, 0.15);
+    transition: border-color 0.4s;
+}
+
+.retailer-card:hover {
+    border-color: rgba(184, 151, 42, 0.5);
+}
+
+.retailer-city {
+    font-family: "cormorant";
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.retailer-address {
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: #c8c0b0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .contact-section { padding: 80px 40px; }
+    .contact-grid { gap: 50px; }
+    .retailers-section { padding: 80px 40px; }
+    .retailers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .contact-section { padding: 60px 30px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 60px; }
+    .retailers-section { padding: 60px 30px; }
+    .retailers-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+@media (max-width: 480px) {
+    .contact-section { padding: 50px 20px; }
+    .retailers-section { padding: 50px 20px; }
+    .retailers-grid { grid-template-columns: 1fr; }
+}

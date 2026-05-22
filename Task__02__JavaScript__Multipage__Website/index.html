@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex — Perpetual Excellence</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <div class="loader" id="loader">
+        <div class="loader-logo">ROLE<span>X</span></div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+        <div class="loader-num" id="loader-num">0%</div>
+    </div>
+
+    <div id="wrapper" data-scroll-container>
+
+        <header class="main-header">
+            <a href="index.html" class="nav-logo">ROLE<span>X</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="ri-menu-3-fill" id="ham-icon"></i>
+            </button>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./Pages/collection.html">Collection</a></li>
+                    <li><a href="./Pages/craftsmanship.html">Craftsmanship</a></li>
+                    <li><a href="./Pages/about.html">About</a></li>
+                    <li><a href="./Pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="nav-overlay" id="nav-overlay"></div>
+
+        <main>
+            <section class="hero-section" id="hero-section">
+                <canvas id="watch-canvas"></canvas>
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Perpetual Excellence Since 1905</p>
+                    <h1 class="hero-title">A Crown For Every<br><em>Achievement</em></h1>
+                    <p class="hero-subtitle">Scroll to Explore</p>
+                </div>
+                <div class="hero-scroll-hint">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </section>
+
+            <section class="marquee-section" id="marquee-section">
+                <div class="marquee-track">
+                    <span>Rolex</span><span class="dot">◆</span>
+                    <span>Since 1905</span><span class="dot">◆</span>
+                    <span>Swiss Made</span><span class="dot">◆</span>
+                    <span>Perpetual Movement</span><span class="dot">◆</span>
+                    <span>Geneva Seal</span><span class="dot">◆</span>
+                    <span>Precision</span><span class="dot">◆</span>
+                    <span>Craftsmanship</span><span class="dot">◆</span>
+                    <span>Luxury</span><span class="dot">◆</span>
+                    <span>Rolex</span><span class="dot">◆</span>
+                    <span>Since 1905</span><span class="dot">◆</span>
+                    <span>Swiss Made</span><span class="dot">◆</span>
+                    <span>Perpetual Movement</span><span class="dot">◆</span>
+                    <span>Geneva Seal</span><span class="dot">◆</span>
+                    <span>Precision</span><span class="dot">◆</span>
+                    <span>Craftsmanship</span><span class="dot">◆</span>
+                    <span>Luxury</span><span class="dot">◆</span>
+                </div>
+            </section>
+
+            <section class="about-section" id="about-section">
+                <div class="about-left">
+                    <p class="about-label">Our Heritage</p>
+                    <h2 class="about-heading">Timeless <em>Precision</em><br>Since 1905</h2>
+                </div>
+                <div class="about-right">
+                    <p class="about-text">For over a century, Rolex has stood as the pinnacle of swiss watchmaking —
+                        where technical mastery meets enduring elegance. Every movement, every case, every dial is a
+                        testament to our unwavering commitment to perfection.</p>
+                    <a href="./Pages/about.html" class="btn-outline">Discover Our Story</a>
+                </div>
+            </section>
+
+            <section class="collection-section" id="collection-section">
+                <div class="collection-header">
+                    <div class="collection-heading-para">
+                        <p class="section-label">Our Collection</p>
+                        <h2 class="section-title">Iconic<br>Timepieces</h2>
+                    </div>
+                    <a href="./Pages/collection.html" class="btn-outline">View All</a>
+                </div>
+                <div class="collection-grid">
+                    <div class="watch-card">
+                        <div class="watch-card-image">
+                            <img src="./Assets/Images/Rolex-Submariner.png" alt="Submariner">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 126610LN</p>
+                            <h3 class="watch-card-name">Submariner</h3>
+                            <p class="watch-card-desc">The quintessential diver's watch. Waterproof to 300 metres, the
+                                Submariner has been the reference in diving watches since 1953.</p>
+                            <a href="./Pages/collection.html" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+                    <div class="watch-card">
+                        <div class="watch-card-image">
+                            <img src="./Assets/Images/Rolex-Datejust.jpg" alt="DateJust">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 126334</p>
+                            <h3 class="watch-card-name">Datejust</h3>
+                            <p class="watch-card-desc">An emblem of classic watchmaking. Since 1945, the Datejust has
+                                defined the aesthetic codes of the classic watch.</p>
+                            <a href="./Pages/collection.html" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+                    <div class="watch-card">
+                        <div class="watch-card-image">
+                            <img src="./Assets/Images/Rolex-Daydate.jpg" alt="DayDate">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 228238</p>
+                            <h3 class="watch-card-name">Day-Date</h3>
+                            <p class="watch-card-desc">The watch of prestige and influence. Worn exclusively in precious
+                                metals, the Day-Date has graced the wrists of the world's most influential figures.</p>
+                            <a href="./Pages/collection.html" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="craftsmanship-section" id="craftsmanship-section">
+                <div class="craft-grid">
+                    <div class="craft-steps">
+                        <p class="section-label">The Art of Making</p>
+                        <h2 class="section-title">The Rolex<br>Process</h2>
+                        <div class="craft-step active">
+                            <div class="craft-step-num">01</div>
+                            <div class="craft-step-content">
+                                <h3 class="craft-step-title">In-House Movements</h3>
+                                <p class="craft-step-text">Every Rolex movement is designed, developed, and manufactured
+                                    entirely in-house — a complete integration that ensures uncompromising quality at
+                                    every stage.</p>
+                            </div>
+                        </div>
+                        <div class="craft-step">
+                            <div class="craft-step-num">02</div>
+                            <div class="craft-step-content">
+                                <h3 class="craft-step-title">Oystersteel Mastery</h3>
+                                <p class="craft-step-text">Rolex uses its own exclusive alloy — Oystersteel — from the
+                                    904L steel family. Particularly resistant to corrosion, it achieves a rare sheen
+                                    when polished.</p>
+                            </div>
+                        </div>
+                        <div class="craft-step">
+                            <div class="craft-step-num">03</div>
+                            <div class="craft-step-content">
+                                <h3 class="craft-step-title">Superlative Chronometer</h3>
+                                <p class="craft-step-text">Every Rolex is certified as a Superlative Chronometer —
+                                    accurate to -2/+2 seconds per day. A standard that goes far beyond industry
+                                    requirements.</p>
+                            </div>
+                        </div>
+                        <div class="craft-step">
+                            <div class="craft-step-num">04</div>
+                            <div class="craft-step-content">
+                                <h3 class="craft-step-title">Perpetual Rotor</h3>
+                                <p class="craft-step-text">The invention of the self-winding mechanism with a Perpetual
+                                    rotor in 1931 transformed watchmaking. It winds the mainspring continuously through
+                                    the motion of the wrist.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="craft-visual">
+                        <img class="craft-image" src="./Assets/Images/craft-1.png" alt="Craftsmanship" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section" id="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="120">0</div>
+                        <p class="stat-label">Years of Excellence</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="50">0</div>
+                        <p class="stat-label">Iconic Models</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="2000">0</div>
+                        <p class="stat-label">Parts Per Watch</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="1905">0</div>
+                        <p class="stat-label">Founded</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quote-section" id="quote-section">
+                <div class="quote-wrap">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text">A watch is not just a timepiece. It is a reflection of who you are — and who
+                        you aspire to be.</p>
+                    <p class="quote-author">Hans Wilsdorf — Founder, Rolex</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">ROLE<span>X</span></div>
+                    <p class="footer-tagline">Since 1905, Rolex has been at the forefront of watchmaking — crafting
+                        timepieces that endure through generations.</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Collections</p>
+                    <ul>
+                        <li><a href="./Pages/collection.html">Submariner</a></li>
+                        <li><a href="./Pages/collection.html">Datejust</a></li>
+                        <li><a href="./Pages/collection.html">Day-Date</a></li>
+                        <li><a href="./Pages/collection.html">GMT-Master II</a></li>
+                        <li><a href="./Pages/collection.html">Daytona</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Discover</p>
+                    <ul>
+                        <li><a href="./Pages/craftsmanship.html">Craftsmanship</a></li>
+                        <li><a href="./Pages/about.html">Our Heritage</a></li>
+                        <li><a href="#">Philanthropy</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Contact</p>
+                    <ul>
+                        <li><a href="./Pages/contact.html">Find a Retailer</a></li>
+                        <li><a href="./Pages/contact.html">Customer Service</a></li>
+                        <li><a href="./Pages/contact.html">Press Enquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 ROLEX SA — Concept Redesign. All rights reserved.</p>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>

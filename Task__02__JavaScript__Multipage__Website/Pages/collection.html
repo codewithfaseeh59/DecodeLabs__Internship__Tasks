@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection — Rolex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/collection.css">
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <div class="loader" id="loader">
+        <div class="loader-logo">ROLE<span>X</span></div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+        <div class="loader-num" id="loader-num">0%</div>
+    </div>
+
+    <div id="wrapper" data-scroll-container>
+
+
+       <header class="main-header">
+    <a href="../index.html" class="nav-logo">ROLE<span>X</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="ri-menu-3-fill" id="ham-icon"></i>
+            </button>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="./collection.html">Collection</a></li>
+                    <li><a href="./craftsmanship.html">Craftsmanship</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="nav-overlay" id="nav-overlay"></div>
+
+        <main>
+            <section class="page-hero">
+                <div class="page-hero-content">
+                    <p class="hero-eyebrow">Discover The Range</p>
+                    <h1 class="page-hero-title">Our <em>Collection</em></h1>
+                </div>
+            </section>
+
+            <section class="filter-section">
+                <div class="filter-wrap">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="sport">Sport</button>
+                    <button class="filter-btn" data-filter="classic">Classic</button>
+                    <button class="filter-btn" data-filter="prestige">Prestige</button>
+                </div>
+            </section>
+
+            <section class="full-collection">
+                <div class="full-collection-grid">
+
+                    <div class="watch-card" data-category="sport">
+                        <div class="watch-card-image">
+                            <img src="../Assets/Images/Rolex-Submariner.png" alt="Submariner">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 126610LN</p>
+                            <h3 class="watch-card-name">Submariner</h3>
+                            <p class="watch-card-desc">The quintessential diver's watch. Waterproof to 300 metres, the
+                                Submariner has been the reference in diving watches since 1953.</p>
+                            <a href="#" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+
+                    <div class="watch-card" data-category="classic">
+                        <div class="watch-card-image">
+                            <img src="../Assets/Images/Rolex-Datejust.jpg" alt="Datejust">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 126334</p>
+                            <h3 class="watch-card-name">Datejust</h3>
+                            <p class="watch-card-desc">An emblem of classic watchmaking. Since 1945, the Datejust has
+                                defined the aesthetic codes of the classic watch.</p>
+                            <a href="#" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+
+                    <div class="watch-card" data-category="prestige">
+                        <div class="watch-card-image">
+                            <img src="../Assets/Images/Rolex-Daydate.jpg" alt="Day-Date">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 228238</p>
+                            <h3 class="watch-card-name">Day‑Date</h3>
+                            <p class="watch-card-desc">The watch of prestige and influence. Worn exclusively in precious
+                                metals.</p>
+                            <a href="#" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+
+                    <div class="watch-card" data-category="sport">
+                        <div class="watch-card-image">
+                            <img src="../Assets/Images/Rolex-GMT.png" alt="GMT Master II">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 126710BLRO</p>
+                            <h3 class="watch-card-name">GMT‑Master II</h3>
+                            <p class="watch-card-desc">The watch of travellers. Displays two time zones simultaneously
+                                with precision and style.</p>
+                            <a href="#" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+
+                    <div class="watch-card" data-category="sport">
+                        <div class="watch-card-image">
+                            <img src="../Assets/Images/Rolex-Daytona.png" alt="Daytona">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 116500LN</p>
+                            <h3 class="watch-card-name">Daytona</h3>
+                            <p class="watch-card-desc">Born to race. The Cosmograph Daytona is the ultimate chronograph
+                                — precision engineered for motorsport.</p>
+                            <a href="#" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+
+                    <div class="watch-card" data-category="classic">
+                        <div class="watch-card-image">
+                            <img src="../Assets/Images/Rolex-Oyster.png" alt="Oyster Perpetual">
+                        </div>
+                        <div class="watch-card-body">
+                            <p class="watch-card-ref">Ref. 124300</p>
+                            <h3 class="watch-card-name">Oyster Perpetual</h3>
+                            <p class="watch-card-desc">The purest expression of the Oyster concept — the watch that
+                                started it all.</p>
+                            <a href="#" class="watch-card-link">Explore →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">ROLE<span>X</span></div>
+                    <p class="footer-tagline">Since 1905, Rolex has been at the forefront of watchmaking — crafting
+                        timepieces that endure through generations.</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Collections</p>
+                    <ul>
+                        <li><a href="./collection.html">Submariner</a></li>
+                        <li><a href="./collection.html">Datejust</a></li>
+                        <li><a href="./collection.html">Day-Date</a></li>
+                        <li><a href="./collection.html">GMT-Master II</a></li>
+                        <li><a href="./collection.html">Daytona</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Discover</p>
+                    <ul>
+                        <li><a href="./craftsmanship.html">Craftsmanship</a></li>
+                        <li><a href="./about.html">Our Heritage</a></li>
+                        <li><a href="#">Philanthropy</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Contact</p>
+                    <ul>
+                        <li><a href="./contact.html">Find a Retailer</a></li>
+                        <li><a href="./contact.html">Customer Service</a></li>
+                        <li><a href="./contact.html">Press Enquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 ROLEX SA — Concept Redesign. All rights reserved.</p>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../JS/collection.js"></script>
+    <script src="../JS/common.js"></script>
+</body>
+
+</html>

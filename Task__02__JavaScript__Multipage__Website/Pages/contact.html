@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Rolex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <div class="loader" id="loader">
+        <div class="loader-logo">ROLE<span>X</span></div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+        <div class="loader-num" id="loader-num">0%</div>
+    </div>
+
+    <div id="wrapper" data-scroll-container>
+
+
+        <header class="main-header">
+    <a href="../index.html" class="nav-logo">ROLE<span>X</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="ri-menu-3-fill" id="ham-icon"></i>
+            </button>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="./collection.html">Collection</a></li>
+                    <li><a href="./craftsmanship.html">Craftsmanship</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="nav-overlay" id="nav-overlay"></div>
+
+        <main>
+            <section class="page-hero">
+                <div class="page-hero-content">
+                    <p class="hero-eyebrow">Get In Touch</p>
+                    <h1 class="page-hero-title">Contact <em>Us</em></h1>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="contact-grid">
+
+                    <div class="contact-form-wrap">
+                        <p class="section-label">Send A Message</p>
+                        <h2 class="section-title">We'd Love To <em>Hear</em> From You</h2>
+                        <div class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-input" placeholder="Your full name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-input" placeholder="your@email.com" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject</label>
+                                <select class="form-input form-select">
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option>Find a Retailer</option>
+                                    <option>Customer Service</option>
+                                    <option>Press Enquiry</option>
+                                    <option>General Enquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-input form-textarea" placeholder="Your message..."></textarea>
+                            </div>
+                            <button class="btn-submit">Send Message</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-wrap">
+                        <p class="section-label">Our Details</p>
+                        <h2 class="section-title">Find <em>Us</em></h2>
+                        <div class="contact-info-items">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact-info-title">Headquarters</h4>
+                                    <p class="contact-info-text">Rue François-Dussaud 3-5-7<br>1211 Geneva 26,
+                                        Switzerland</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact-info-title">Phone</h4>
+                                    <p class="contact-info-text">+41 22 302 22 00</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact-info-title">Email</h4>
+                                    <p class="contact-info-text">info@rolex.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact-info-title">Working Hours</h4>
+                                    <p class="contact-info-text">Monday — Friday<br>9:00 AM — 6:00 PM CET</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials">
+                            <p class="section-label">Follow Us</p>
+                            <div class="contact-social-icons">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="retailers-section">
+                <div class="retailers-header">
+                    <p class="section-label">Worldwide</p>
+                    <h2 class="section-title">Find A <em>Retailer</em></h2>
+                </div>
+                <div class="retailers-grid">
+                    <div class="retailer-card">
+                        <h3 class="retailer-city">Geneva</h3>
+                        <p class="retailer-address">Place de Longemalle 1<br>1204 Geneva, Switzerland</p>
+                        <a href="#" class="watch-card-link">Get Directions →</a>
+                    </div>
+                    <div class="retailer-card">
+                        <h3 class="retailer-city">London</h3>
+                        <p class="retailer-address">7 Old Bond Street<br>London W1S 4PH, UK</p>
+                        <a href="#" class="watch-card-link">Get Directions →</a>
+                    </div>
+                    <div class="retailer-card">
+                        <h3 class="retailer-city">New York</h3>
+                        <p class="retailer-address">665 Fifth Avenue<br>New York, NY 10022, USA</p>
+                        <a href="#" class="watch-card-link">Get Directions →</a>
+                    </div>
+                    <div class="retailer-card">
+                        <h3 class="retailer-city">Dubai</h3>
+                        <p class="retailer-address">Dubai Mall, Financial Centre Road<br>Dubai, UAE</p>
+                        <a href="#" class="watch-card-link">Get Directions →</a>
+                    </div>
+                    <div class="retailer-card">
+                        <h3 class="retailer-city">Tokyo</h3>
+                        <p class="retailer-address">5-4-1 Ginza, Chuo-ku<br>Tokyo 104-0061, Japan</p>
+                        <a href="#" class="watch-card-link">Get Directions →</a>
+                    </div>
+                    <div class="retailer-card">
+                        <h3 class="retailer-city">Paris</h3>
+                        <p class="retailer-address">23 Place Vendôme<br>75001 Paris, France</p>
+                        <a href="#" class="watch-card-link">Get Directions →</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">ROLE<span>X</span></div>
+                    <p class="footer-tagline">Since 1905, Rolex has been at the forefront of watchmaking — crafting
+                        timepieces that endure through generations.</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Collections</p>
+                    <ul>
+                        <li><a href="./collection.html">Submariner</a></li>
+                        <li><a href="./collection.html">Datejust</a></li>
+                        <li><a href="./collection.html">Day-Date</a></li>
+                        <li><a href="./collection.html">GMT-Master II</a></li>
+                        <li><a href="./collection.html">Daytona</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Discover</p>
+                    <ul>
+                        <li><a href="./craftsmanship.html">Craftsmanship</a></li>
+                        <li><a href="./about.html">Our Heritage</a></li>
+                        <li><a href="#">Philanthropy</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Contact</p>
+                    <ul>
+                        <li><a href="./contact.html">Find a Retailer</a></li>
+                        <li><a href="./contact.html">Customer Service</a></li>
+                        <li><a href="./contact.html">Press Enquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 ROLEX SA — Concept Redesign. All rights reserved.</p>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../JS/contact.js"></script>
+    <script src="../JS/common.js"></script>
+</body>
+
+</html>

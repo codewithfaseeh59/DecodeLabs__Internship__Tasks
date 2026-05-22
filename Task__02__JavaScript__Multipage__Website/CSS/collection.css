@@ -1,0 +1,69 @@
+
+.filter-section {
+    padding: 48px 60px;
+    border-bottom: 1px solid rgba(184, 151, 42, 0.15);
+    background: #0a0a0a;
+}
+
+.filter-wrap {
+    display: flex;
+    gap: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid rgba(184, 151, 42, 0.3);
+    color: #c8c0b0;
+    padding: 10px 28px;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    cursor: none;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #b8972a;
+    border-color: #b8972a;
+    color: #0a0a0a;
+}
+
+
+.full-collection {
+    padding: 80px 60px;
+    background: #0a0a0a;
+}
+
+.full-collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.watch-card.hidden {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .full-collection { padding: 60px 40px; }
+    .full-collection-grid { grid-template-columns: repeat(2, 1fr); }
+    .filter-section { padding: 36px 40px; }
+}
+@media (max-width: 768px) {
+    .full-collection { padding: 50px 30px; }
+    .full-collection-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .filter-section { padding: 28px 30px; }
+    .filter-wrap { flex-wrap: wrap; gap: 10px; }
+}
+@media (max-width: 480px) {
+    .full-collection { padding: 40px 20px; }
+    .full-collection-grid { grid-template-columns: 1fr; }
+    .filter-section { padding: 24px 20px; }
+}
