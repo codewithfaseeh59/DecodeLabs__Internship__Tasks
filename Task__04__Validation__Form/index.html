@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 4 — Form Design & Validation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <div class="bg-grid"></div>
+
+  <div class="wrapper">
+
+    <div class="form-card" id="formCard">
+
+      <div class="card-header">
+        <div class="badge">PROJECT 04</div>
+        <h1 class="title">Get In Touch<span class="dot">.</span></h1>
+        <p class="subtitle">Fill in your details — no cap, we don't spam.</p>
+      </div>
+
+      <form id="contactForm" novalidate>
+
+        <!-- Name -->
+        <div class="field-group" id="fg-name">
+          <label for="name">Full Name</label>
+          <div class="input-wrap">
+            <input type="text" id="name" placeholder="e.g. Arjun Sharma" autocomplete="off"/>
+            <div class="underline"></div>
+          </div>
+          <span class="msg" id="msg-name"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="field-group" id="fg-email">
+          <label for="email">Email Address</label>
+          <div class="input-wrap">
+            <input type="email" id="email" placeholder="you@example.com" autocomplete="off"/>
+            <div class="underline"></div>
+          </div>
+          <span class="msg" id="msg-email"></span>
+        </div>
+
+        <!-- Phone -->
+        <div class="field-group" id="fg-phone">
+          <label for="phone">Phone Number</label>
+          <div class="input-wrap">
+            <input type="tel" id="phone" placeholder="+91 98765 43210" autocomplete="off"/>
+            <div class="underline"></div>
+          </div>
+          <span class="msg" id="msg-phone"></span>
+        </div>
+
+        <!-- Message -->
+        <div class="field-group" id="fg-message">
+          <label for="message">Message</label>
+          <div class="input-wrap">
+            <textarea id="message" rows="3" placeholder="What's on your mind..."></textarea>
+            <div class="underline"></div>
+          </div>
+          <span class="msg" id="msg-message"></span>
+        </div>
+
+        <button type="submit" id="submitBtn">
+          <span class="btn-text">Send It</span>
+          <span class="btn-arrow">→</span>
+        </button>
+
+      </form>
+
+    </div>
+
+    <!-- Success Card (hidden initially) -->
+    <div class="success-card" id="successCard">
+      <div class="success-icon">✓</div>
+      <h2>We got it, bro!</h2>
+      <p>Your message has been received. We'll hit you back soon.</p>
+      <button id="resetBtn">Send Another</button>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
